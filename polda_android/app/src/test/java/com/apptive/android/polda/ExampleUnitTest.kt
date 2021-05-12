@@ -1,4 +1,4 @@
-package com.apptive.android.myapplication
+package com.apptive.android.polda
 
 import org.junit.Test
 

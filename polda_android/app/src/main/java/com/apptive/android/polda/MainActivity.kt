@@ -1,4 +1,4 @@
-package com.apptive.android.myapplication
+package com.apptive.android.polda
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

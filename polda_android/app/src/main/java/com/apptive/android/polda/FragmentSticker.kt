@@ -1,4 +1,4 @@
-package com.apptive.android.myapplication
+package com.apptive.android.polda
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class FragmentEdit : Fragment() {
+
+class FragmentSticker : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +20,7 @@ class FragmentEdit : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_edit, container, false)
+        return inflater.inflate(R.layout.fragment_sticker, container, false)
     }
 
 

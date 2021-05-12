@@ -1,4 +1,4 @@
-package com.apptive.android.myapplication
+package com.apptive.android.polda
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
