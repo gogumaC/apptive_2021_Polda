@@ -1,25 +1,31 @@
 package com.apptive.android.polda
 
 import android.os.Bundle
+import android.view.*
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import com.apptive.android.polda.databinding.FragmentEditBinding
 
 
 class FragmentEdit : Fragment() {
-
+    private lateinit var binding:FragmentEditBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_edit, container, false)
+        binding=DataBindingUtil.inflate(inflater,R.layout.fragment_edit,container,false)
+
+
+
+        return binding.root
     }
 
 

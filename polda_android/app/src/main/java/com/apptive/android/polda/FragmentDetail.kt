@@ -21,9 +21,11 @@ class FragmentDetail : Fragment() {
 
         binding= DataBindingUtil.inflate(inflater,R.layout.fragment_detail,container,false)
         val sampleList=listOf("1","2","3","4","5")
-        val adapter=CustomPagerAdapter()
+        val adapter=AdapterDetailViewPager()
+        val seekbar=binding.seekBar
         adapter.sampleTitleList=sampleList
         binding.viewPager.adapter=adapter
+
 
 
         return binding.root

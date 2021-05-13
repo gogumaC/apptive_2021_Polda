@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomPagerAdapter:RecyclerView.Adapter<DetailHolder>() {
+class AdapterDetailViewPager:RecyclerView.Adapter<DetailHolder>() {
     var sampleTitleList=listOf<String>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetailHolder {
         val view= LayoutInflater.from(parent.context).inflate(R.layout.item_detail,parent,false)
