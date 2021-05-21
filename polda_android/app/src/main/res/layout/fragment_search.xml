@@ -5,13 +5,13 @@
     <data>
         <variable
             name="search"
-            type="com.apptive.android.polda.FragmentSearch" />
+            type="com.apptive.android.polda.fragment.FragmentSearch" />
     </data>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FragmentSearch">
+        tools:context=".fragment.FragmentSearch">
 
 
         <androidx.recyclerview.widget.RecyclerView

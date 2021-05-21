@@ -5,7 +5,7 @@
     <data>
         <variable
             name="stickerList"
-            type="com.apptive.android.polda.FragmentSticker" />
+            type="com.apptive.android.polda.fragment.FragmentSticker" />
     </data>
     <LinearLayout
 

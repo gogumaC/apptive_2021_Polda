@@ -1,4 +1,4 @@
-package com.apptive.android.polda
+package com.apptive.android.polda.fragment
 
 import android.os.Bundle
 import android.util.Log
@@ -7,15 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
-import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
+import com.apptive.android.polda.AdapterDetailViewPager
+import com.apptive.android.polda.R
 import com.apptive.android.polda.databinding.FragmentDetailBinding
-import com.google.android.material.snackbar.Snackbar
-import java.util.Observer
 
 class FragmentDetail : Fragment() {
     private lateinit var binding:FragmentDetailBinding
@@ -29,10 +25,10 @@ class FragmentDetail : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
-        binding= DataBindingUtil.inflate(inflater,R.layout.fragment_detail,container,false)
+        binding= DataBindingUtil.inflate(inflater, R.layout.fragment_detail,container,false)
         val sampleList=listOf("1","2","3","4","5")
         val pageNum=sampleList.size
-        val adapter=AdapterDetailViewPager()
+        val adapter= AdapterDetailViewPager()
         val seekBar=binding.seekBar
         val detailViewPager=binding.viewPager
         val FabMain=binding.detailFabMain

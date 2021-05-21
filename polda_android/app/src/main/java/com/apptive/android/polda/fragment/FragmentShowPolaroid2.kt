@@ -1,4 +1,4 @@
-package com.apptive.android.polda
+package com.apptive.android.polda.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
+import com.apptive.android.polda.R
 
 class FragmentShowPolaroid2: Fragment() {
 

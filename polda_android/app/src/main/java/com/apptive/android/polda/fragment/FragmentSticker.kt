@@ -1,17 +1,14 @@
-package com.apptive.android.polda
+package com.apptive.android.polda.fragment
 
-import android.graphics.Point
-import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RequiresApi
-import androidx.core.view.ViewCompat.getDisplay
 import androidx.databinding.DataBindingUtil
+import com.apptive.android.polda.AdapterStickerViewPager
+import com.apptive.android.polda.R
 import com.apptive.android.polda.databinding.FragmentStickerBinding
-import com.apptive.android.polda.databinding.ItemStickerTabsBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
 
@@ -29,11 +26,11 @@ class FragmentSticker : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding= DataBindingUtil.inflate(inflater,R.layout.fragment_sticker,container,false)
+        binding= DataBindingUtil.inflate(inflater, R.layout.fragment_sticker,container,false)
 
         val viewPager=binding.stickerViewPager
         val tabLayout=binding.stickerTabLayout
-        val adapter=AdapterStickerViewPager(requireContext())
+        val adapter= AdapterStickerViewPager(requireContext())
         adapter.optionList=listOf()
         viewPager.adapter=adapter
 

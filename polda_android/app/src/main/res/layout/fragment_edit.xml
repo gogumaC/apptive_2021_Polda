@@ -5,13 +5,13 @@
     <data>
         <variable
             name="edit"
-            type="com.apptive.android.polda.FragmentEdit" />
+            type="com.apptive.android.polda.fragment.FragmentEdit" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FragmentEdit">
+        tools:context=".fragment.FragmentEdit">
 
         <Button
             android:id="@+id/btnEditSave"

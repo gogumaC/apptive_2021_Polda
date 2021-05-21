@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FragmentShowPolaloid">
+    tools:context=".fragment.FragmentShowPolaloid">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
             />
     </LinearLayout>
 
-    <com.apptive.android.polda.PolaroidFront
+    <com.apptive.android.polda.customView.PolaroidFront
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:id="@+id/polaroidFront"

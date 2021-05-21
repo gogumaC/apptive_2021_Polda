@@ -7,13 +7,13 @@
 
         <variable
             name="home"
-            type="com.apptive.android.polda.FragmentHome" />
+            type="com.apptive.android.polda.fragment.FragmentHome" />
     </data>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FragmentHome">
+        tools:context=".fragment.FragmentHome">
 
 
 

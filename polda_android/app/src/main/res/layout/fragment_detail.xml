@@ -5,12 +5,12 @@
     <data>
         <variable
             name="detail"
-            type="com.apptive.android.polda.FragmentDetail" />
+            type="com.apptive.android.polda.fragment.FragmentDetail" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FragmentDetail">
+        tools:context=".fragment.FragmentDetail">
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

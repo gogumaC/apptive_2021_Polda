@@ -1,11 +1,12 @@
-package com.apptive.android.polda
+package com.apptive.android.polda.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
+import com.apptive.android.polda.SingleLiveEvent
 
 class ViewModelDetail: ViewModel() {
-    private val _detailPage=SingleLiveEvent<Int>()
-    private val _detailSeekbarProgress=SingleLiveEvent<Int>()
+    private val _detailPage= SingleLiveEvent<Int>()
+    private val _detailSeekbarProgress= SingleLiveEvent<Int>()
 
     val detailPage: LiveData<Int> get()=_detailPage
     val detailSeekbarProgress:LiveData<Int> get()=_detailSeekbarProgress

@@ -1,10 +1,11 @@
-package com.apptive.android.polda
+package com.apptive.android.polda.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.apptive.android.polda.R
 
 class FragmentEditMemo: Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
