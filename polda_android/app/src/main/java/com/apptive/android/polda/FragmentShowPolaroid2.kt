@@ -22,6 +22,8 @@ class FragmentShowPolaroid2: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
         val editMemoBtn = view.findViewById<Button>(R.id.editMemoBtn)
         val editMemo = view.findViewById<EditText>(R.id.memoView)
 

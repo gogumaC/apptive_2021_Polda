@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentShowPolaroid22">
+    app:startDestination="@id/fragmentEditMemo2">
 
     <fragment
         android:id="@+id/fragmentHome"
@@ -61,9 +61,11 @@
     <fragment
         android:id="@+id/fragmentEditMemo2"
         android:name="com.apptive.android.polda.FragmentEditMemo"
-        android:label="FragmentEditMemo" />
+        android:label="FragmentEditMemo"
+        tools:layout="@layout/fragment_edit_memo"/>
     <fragment
         android:id="@+id/fragmentShowPolaroid22"
         android:name="com.apptive.android.polda.FragmentShowPolaroid2"
-        android:label="FragmentShowPolaroid2" />
+        android:label="FragmentShowPolaroid2"
+        tools:layout="@layout/fragment_show_polaroid2"/>
 </navigation>
