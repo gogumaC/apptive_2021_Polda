@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/polaloid1"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:background="#B5B5B5"
+        app:layout_constraintBottom_toTopOf="@+id/polaloid4"
+        app:layout_constraintEnd_toStartOf="@+id/polaloid2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/polaloid2"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:background="#B5B5B5"
+        app:layout_constraintBottom_toTopOf="@+id/polaloid3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/polaloid1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/polaloid4"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:background="#B5B5B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/polaloid3"
+        app:layout_constraintTop_toBottomOf="@+id/polaloid2" />
+
+    <View
+        android:id="@+id/polaloid3"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:background="#B5B5B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/polaloid4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/polaloid1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
