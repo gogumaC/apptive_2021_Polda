@@ -7,7 +7,6 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
-    dataBinding{enabled true}
 
     defaultConfig {
         applicationId "com.apptive.android.myapplication"
@@ -33,9 +32,9 @@ android {
         jvmTarget = '1.8'
     }
 
-    viewBinding {
-        enabled = true
-    }
+//    viewBinding {
+//        enabled = true
+//    }
 
     dataBinding {
         enabled = true

@@ -36,9 +36,6 @@ class FragmentDetail : Fragment() {
         val seekBar=binding.seekBar
         val detailViewPager=binding.viewPager
         val FabMain=binding.detailFabMain
-        val FabDel=binding.detailFabDel
-        val FabCopy=binding.detailFabCopy
-        val FabPaste=binding.detailFabPaste
         adapter.sampleTitleList=sampleList
         detailViewPager.adapter=adapter
 
