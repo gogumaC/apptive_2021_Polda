@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentSearch">
+    app:startDestination="@id/fragmentDetail">
 
     <fragment
         android:id="@+id/fragmentHome"
@@ -16,9 +16,23 @@
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="com.apptive.android.polda.FragmentDetail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/fragmentEdit"
+        android:name="com.apptive.android.polda.FragmentEdit"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" />
+    <fragment
         android:id="@+id/fragmentShowPolaloid"
         android:name="com.apptive.android.polda.FragmentShowPolaloid"
         android:label="fragment_show_polaloid"
         tools:layout="@layout/fragment_show_polaloid" />
-
+    <fragment
+        android:id="@+id/fragmentSticker"
+        android:name="com.apptive.android.polda.FragmentSticker"
+        android:label="fragment_sticker"
+        tools:layout="@layout/fragment_sticker" />
 </navigation>
