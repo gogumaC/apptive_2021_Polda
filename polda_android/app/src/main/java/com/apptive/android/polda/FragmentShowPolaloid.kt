@@ -1,4 +1,4 @@
-package com.apptive.android.myapplication
+package com.apptive.android.polda
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class FragmentSearch : Fragment() {
+class FragmentShowPolaloid : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +19,7 @@ class FragmentSearch : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_search, container, false)
+        return inflater.inflate(R.layout.fragment_show_polaloid, container, false)
     }
-
 
 }
