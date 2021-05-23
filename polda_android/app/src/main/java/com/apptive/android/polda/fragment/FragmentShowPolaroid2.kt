@@ -28,14 +28,15 @@ class FragmentShowPolaroid2: Fragment() {
         val editMemoBtn = view.findViewById<Button>(R.id.editMemoBtn)
         val editMemo = view.findViewById<EditText>(R.id.memoView)
 
-        editMemoBtn.setOnClickListener{
-            if(edit == 0){
-                editMemo.setEnabled(true)
-                edit = 1
-            }else{
-                editMemo.setEnabled(false)
-                edit = 0
-            }
-        }
+        //TODO("ERR ")
+//        editMemoBtn.setOnClickListener{
+//            if(edit == 0){
+//                editMemo.setEnabled(true)
+//                edit = 1
+//            }else{
+//                editMemo.setEnabled(false)
+//                edit = 0
+//            }
+//        }
     }
 }

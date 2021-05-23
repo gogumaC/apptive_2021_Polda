@@ -39,19 +39,13 @@ class FragmentDetail : Fragment() {
         //클릭 이벤트
         adapter.setOnItemClickListener(object : AdapterDetailViewPager.OnItemClickListener {
             override fun onItemClick(v: View, pos: Int) {
-                //TODO("코드 더 간단하게 수정하는 방법찾기")
-                val pol1 = view?.findViewById<View>(R.id.polaloid1)
-                val pol2 = view?.findViewById<View>(R.id.polaloid2)
-                val pol3 = view?.findViewById<View>(R.id.polaloid3)
-                val pol4 = view?.findViewById<View>(R.id.polaloid4)
+                //TODO("페이지 ui변경")
+                val action=FragmentDetailDirections.actionFragmentDetailToFragmentShowPolaloid()
+                v.findNavController().navigate(action)
 
-                pol1?.setOnClickListener { polaloidClicked()}
-                pol2?.setOnClickListener { polaloidClicked()}
-                pol3?.setOnClickListener { polaloidClicked()}
-                pol4?.setOnClickListener { polaloidClicked()}
 
             }
-            fun polaloidClicked(){}
+
         })
 
         //FAB 누르면 편집부로 전환

@@ -7,44 +7,48 @@
     tools:context=".fragment.FragmentShowPolaloid">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="200dp"
-        android:id="@+id/btnList"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/polaroidFront"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:weightSum="3"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="편집"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="저장"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="공유"
-            />
-    </LinearLayout>
 
-    <com.apptive.android.polda.customView.PolaroidFront
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:id="@+id/polaroidFront"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="100dp"
-        />
+        <LinearLayout
+            android:id="@+id/btnList"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintBottom_toTopOf="@+id/polaroidFront"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="편집" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="저장" />
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="공유" />
+        </LinearLayout>
+
+        <com.apptive.android.polda.customView.PolaroidFront
+            android:id="@+id/polaroidFront"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
