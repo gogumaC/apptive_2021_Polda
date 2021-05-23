@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.transition.FragmentTransitionSupport
 import com.apptive.android.polda.R
 
 class FragmentShowPolaroid2: Fragment() {
@@ -23,12 +25,10 @@ class FragmentShowPolaroid2: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //TODO("ERR:수정")
+//        val editMemoBtn = view.findViewById<Button>(R.id.editMemoBtn)
+//        val editMemo = view.findViewById<EditText>(R.id.memoView)
 
-
-        val editMemoBtn = view.findViewById<Button>(R.id.editMemoBtn)
-        val editMemo = view.findViewById<EditText>(R.id.memoView)
-
-        //TODO("ERR ")
 //        editMemoBtn.setOnClickListener{
 //            if(edit == 0){
 //                editMemo.setEnabled(true)

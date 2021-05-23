@@ -49,7 +49,6 @@ class FragmentDetail : Fragment() {
         })
 
         //FAB 누르면 편집부로 전환
-//        TODO("fab버튼 앞으로 빼고 다시 확인 요망")
         fabMain.setOnClickListener{
             val action=FragmentDetailDirections.actionFragmentDetailToFragmentEdit()
             it.findNavController().navigate(action)
@@ -59,25 +58,23 @@ class FragmentDetail : Fragment() {
 
         //SeekBar-PageScroll
 
-        //var page:Int
-        //var scroll:Int
         var setProgress:Int
 
-        detailViewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-                Log.d("checkfor", "page : ${position + 1}")
-                seekBar.progress=when(position){
-                    0->0
-                    pageNum-1->100
-                    else->100/(pageNum-1)*(position)
-
-                }
-
-
-            }
-
-        })
+//        detailViewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+//            override fun onPageSelected(position: Int) {
+//                super.onPageSelected(position)
+//                Log.d("checkfor", "page : ${position + 1}")
+//                seekBar.progress=when(position){
+//                    0->0
+//                    pageNum-1->100
+//                    else->100/(pageNum-1)*(position)
+//
+//                }
+//
+//
+//            }
+//
+//        })
 
 
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {

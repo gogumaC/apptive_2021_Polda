@@ -40,6 +40,7 @@ class FragmentEdit : Fragment() {
             view.findNavController().navigate(action)
         }
         binding.btnShowStickers.setOnClickListener {
+            //frame.setVisibility(View.VISIBLE)
             //childFragmentManager.beginTransaction().add(R.id.fragment2,FragmentSticker()).commit()
 //            val mTransaction:FragmentTransaction=getChildFragmentManager().beginTransaction()
 //            mTransaction.add(R.id.frameLayout,FragmentSticker())

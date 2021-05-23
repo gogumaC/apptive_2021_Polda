@@ -8,7 +8,7 @@ import android.widget.Button
 import androidx.core.view.GestureDetectorCompat
 import androidx.navigation.findNavController
 import com.apptive.android.polda.R
-import com.apptive.android.polda.SwipeGesture
+
 import com.apptive.android.polda.customView.PolaroidFront
 
 
