@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentHome">
+    app:startDestination="@id/fragmentDetail">
 
     <fragment
         android:id="@+id/fragmentHome"
@@ -20,10 +20,7 @@
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" >
         <action
-            android:id="@+id/action_fragmentSearch_to_fragmentEdit"
-            app:destination="@id/fragmentEdit" />
-        <action
-            android:id="@+id/action_fragmentSearch_to_fragmentShowPolaloid2"
+            android:id="@+id/action_fragmentSearch_to_fragmentShowPolaloid"
             app:destination="@id/fragmentShowPolaloid" />
     </fragment>
     <fragment
@@ -32,8 +29,11 @@
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <action
-            android:id="@+id/action_fragmentDetail_to_fragmentShowPolaloid2"
+            android:id="@+id/action_fragmentDetail_to_fragmentShowPolaloid"
             app:destination="@id/fragmentShowPolaloid" />
+        <action
+            android:id="@+id/action_fragmentDetail_to_fragmentEdit"
+            app:destination="@id/fragmentEdit" />
     </fragment>
     <fragment
         android:id="@+id/fragmentEdit"
@@ -52,6 +52,9 @@
         <action
             android:id="@+id/action_fragmentShowPolaloid_to_fragmentShowPolaroid22"
             app:destination="@id/fragmentShowPolaroid22" />
+        <action
+            android:id="@+id/action_fragmentShowPolaloid_to_fragmentEdit"
+            app:destination="@id/fragmentEdit" />
     </fragment>
     <fragment
         android:id="@+id/fragmentSticker"

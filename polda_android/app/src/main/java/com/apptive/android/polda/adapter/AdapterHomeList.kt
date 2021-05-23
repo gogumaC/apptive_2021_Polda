@@ -15,6 +15,17 @@ import androidx.recyclerview.widget.RecyclerView
 class AdapterHomeList():RecyclerView.Adapter<HomeHolder>(){
 
     var item = mutableListOf<SampleList>()
+    //클릭이벤트 위한 인터페이스 구현
+
+    interface OnItemClickListener{
+        fun onItemClick(v:View, pos : Int)
+    }
+    var listener : OnItemClickListener? = null
+    fun setOnItemClickListener(listener : OnItemClickListener) {
+        this.listener = listener
+    }
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeHolder {
         val binding = LayoutInflater.from(parent.context).inflate(R.layout.item_diary, parent, false)
@@ -24,6 +35,9 @@ class AdapterHomeList():RecyclerView.Adapter<HomeHolder>(){
 
     override fun onBindViewHolder(holder: HomeHolder, position: Int) {
         val data = item[position]
+        holder.itemView.setOnClickListener {
+            listener?.onItemClick(it,position)
+        }
         holder.apply {
             holder.setData(data)
         }
@@ -41,4 +55,7 @@ class HomeHolder(itemView:View): RecyclerView.ViewHolder(itemView){
     fun setData(item: SampleList){
         image.setImageResource(R.drawable.sample_diary)
     }
+
+
+
 }

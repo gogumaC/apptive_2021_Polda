@@ -7,6 +7,7 @@ import android.view.View.VISIBLE
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.apptive.android.polda.AdapterHomeList
 import com.apptive.android.polda.R
@@ -56,6 +57,15 @@ class FragmentHome: Fragment() {
                 sortBtn.visibility = View.INVISIBLE
                 addBtn.visibility = View.INVISIBLE
                 visible = 0
+            }
+        })
+
+        //화면전환 클릭이벤트 구현
+        adapter.setOnItemClickListener(object:AdapterHomeList.OnItemClickListener{
+            override fun onItemClick(v: View, pos: Int) {
+                //TODO("화면전환")
+                val action=FragmentHomeDirections.actionFragmentHomeToFragmentDetail()
+                v.findNavController().navigate(action)
             }
         })
 

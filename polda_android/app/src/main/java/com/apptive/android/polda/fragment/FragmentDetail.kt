@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.apptive.android.polda.AdapterDetailViewPager
 import com.apptive.android.polda.R
@@ -31,16 +32,33 @@ class FragmentDetail : Fragment() {
         val adapter= AdapterDetailViewPager()
         val seekBar=binding.seekBar
         val detailViewPager=binding.viewPager
-        val FabMain=binding.detailFabMain
-        val FabDel=binding.detailFabDel
-        val FabCopy=binding.detailFabCopy
-        val FabPaste=binding.detailFabPaste
+        val fabMain=binding.detailFabMain
         adapter.sampleTitleList=sampleList
         detailViewPager.adapter=adapter
 
-        //FAB
-        FabMain.setOnClickListener{view->
+        //클릭 이벤트
+        adapter.setOnItemClickListener(object : AdapterDetailViewPager.OnItemClickListener {
+            override fun onItemClick(v: View, pos: Int) {
+                //TODO("코드 더 간단하게 수정하는 방법찾기")
+                val pol1 = view?.findViewById<View>(R.id.polaloid1)
+                val pol2 = view?.findViewById<View>(R.id.polaloid2)
+                val pol3 = view?.findViewById<View>(R.id.polaloid3)
+                val pol4 = view?.findViewById<View>(R.id.polaloid4)
 
+                pol1?.setOnClickListener { polaloidClicked()}
+                pol2?.setOnClickListener { polaloidClicked()}
+                pol3?.setOnClickListener { polaloidClicked()}
+                pol4?.setOnClickListener { polaloidClicked()}
+
+            }
+            fun polaloidClicked(){}
+        })
+
+        //FAB 누르면 편집부로 전환
+//        TODO("fab버튼 앞으로 빼고 다시 확인 요망")
+        fabMain.setOnClickListener{
+            val action=FragmentDetailDirections.actionFragmentDetailToFragmentEdit()
+            it.findNavController().navigate(action)
         }
 
 
