@@ -40,7 +40,7 @@ class FragmentDetail : Fragment() {
         adapter.setOnItemClickListener(object : AdapterDetailViewPager.OnItemClickListener {
             override fun onItemClick(v: View, pos: Int) {
                 //TODO("페이지 ui변경")
-                val action=FragmentDetailDirections.actionFragmentDetailToFragmentShowPolaloid()
+                val action=FragmentDetailDirections.actionGlobalShow2()
                 v.findNavController().navigate(action)
 
 
@@ -50,7 +50,7 @@ class FragmentDetail : Fragment() {
 
         //FAB 누르면 편집부로 전환
         fabMain.setOnClickListener{
-            val action=FragmentDetailDirections.actionFragmentDetailToFragmentEdit()
+            val action=FragmentDetailDirections.actionGlobalEdit()
             it.findNavController().navigate(action)
         }
 

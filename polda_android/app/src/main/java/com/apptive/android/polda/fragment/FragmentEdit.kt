@@ -47,6 +47,11 @@ class FragmentEdit : Fragment() {
 //            mTransaction.commit()
         }
 
+        binding.btnEditSave.setOnClickListener {
+            val action=FragmentEditDirections.actionGlobalShow()
+            view.findNavController().navigate(action)
+        }
+
 
     }
 }

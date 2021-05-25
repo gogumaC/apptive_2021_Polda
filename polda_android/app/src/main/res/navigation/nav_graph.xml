@@ -18,57 +18,61 @@
         android:id="@+id/fragmentSearch"
         android:name="com.apptive.android.polda.fragment.FragmentSearch"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" >
-        <action
-            android:id="@+id/action_fragmentSearch_to_fragmentShowPolaloid"
-            app:destination="@id/fragmentShowPolaloid" />
-    </fragment>
+        tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/fragmentDetail"
         android:name="com.apptive.android.polda.fragment.FragmentDetail"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" >
-        <action
-            android:id="@+id/action_fragmentDetail_to_fragmentShowPolaloid"
-            app:destination="@id/fragmentShowPolaloid" />
-        <action
-            android:id="@+id/action_fragmentDetail_to_fragmentEdit"
-            app:destination="@id/fragmentEdit" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragmentEdit"
-        android:name="com.apptive.android.polda.fragment.FragmentEdit"
-        android:label="fragment_edit"
-        tools:layout="@layout/fragment_edit" >
-        <action
-            android:id="@+id/action_fragmentEdit_to_fragmentEditMemo2"
-            app:destination="@id/fragmentEditMemo2" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragmentShowPolaloid"
-        android:name="com.apptive.android.polda.fragment.FragmentShowPolaloid"
-        android:label="fragment_show_polaloid"
-        tools:layout="@layout/fragment_show_polaloid" >
-        <action
-            android:id="@+id/action_fragmentShowPolaloid_to_fragmentShowPolaroid22"
-            app:destination="@id/fragmentShowPolaroid22" />
-        <action
-            android:id="@+id/action_fragmentShowPolaloid_to_fragmentEdit"
-            app:destination="@id/fragmentEdit" />
-    </fragment>
+        tools:layout="@layout/fragment_detail"
+        />
     <fragment
         android:id="@+id/fragmentSticker"
         android:name="com.apptive.android.polda.fragment.FragmentSticker"
         android:label="fragment_sticker"
         tools:layout="@layout/fragment_sticker" />
-    <fragment
-        android:id="@+id/fragmentEditMemo2"
-        android:name="com.apptive.android.polda.fragment.FragmentEditMemo"
-        android:label="FragmentEditMemo"
-        tools:layout="@layout/fragment_edit_memo"/>
-    <fragment
-        android:id="@+id/fragmentShowPolaroid22"
-        android:name="com.apptive.android.polda.fragment.FragmentShowPolaroid2"
-        android:label="FragmentShowPolaroid2"
-        tools:layout="@layout/fragment_show_polaroid2"/>
+    <navigation android:id="@+id/edit"
+        app:startDestination="@id/fragmentEdit">
+        <fragment
+            android:id="@+id/fragmentEdit"
+            android:name="com.apptive.android.polda.fragment.FragmentEdit"
+            android:label="fragment_edit"
+            tools:layout="@layout/fragment_edit">
+            <action
+                android:id="@+id/action_fragmentEdit_to_fragmentEditMemo2"
+                app:destination="@id/fragmentEditMemo2" />
+        </fragment>
+        <fragment
+            android:id="@+id/fragmentEditMemo2"
+            android:name="com.apptive.android.polda.fragment.FragmentEditMemo"
+            android:label="FragmentEditMemo"
+            tools:layout="@layout/fragment_edit_memo" />
+        <action
+            android:id="@+id/action_global_fragmentDetail"
+            app:destination="@id/fragmentDetail"
+            />
+        <action
+            android:id="@+id/action_global_show"
+            app:destination="@id/show"
+            app:popUpTo="@id/fragmentDetail"
+             />
+    </navigation>
+    <navigation android:id="@+id/show"
+        app:startDestination="@id/fragmentShowPolaloid">
+        <fragment
+            android:id="@+id/fragmentShowPolaloid"
+            android:name="com.apptive.android.polda.fragment.FragmentShowPolaloid"
+            android:label="fragment_show_polaloid"
+            tools:layout="@layout/fragment_show_polaloid">
+            <action
+                android:id="@+id/action_fragmentShowPolaloid_to_fragmentShowPolaroid22"
+                app:destination="@id/fragmentShowPolaroid22" />
+        </fragment>
+        <fragment
+            android:id="@+id/fragmentShowPolaroid22"
+            android:name="com.apptive.android.polda.fragment.FragmentShowPolaroid2"
+            android:label="FragmentShowPolaroid2"
+            tools:layout="@layout/fragment_show_polaroid2" />
+    </navigation>
+    <action android:id="@+id/action_global_edit" app:destination="@id/edit" />
+    <action android:id="@+id/action_global_show2" app:destination="@id/show" />
 </navigation>

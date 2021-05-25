@@ -34,7 +34,7 @@ class FragmentShowPolaloid : Fragment() {
 
 
         btnEdit.setOnClickListener {
-            val action=FragmentShowPolaloidDirections.actionFragmentShowPolaloidToFragmentEdit()
+            val action=FragmentShowPolaloidDirections.actionGlobalEdit()
             view.findNavController().navigate(action)
         }
 
