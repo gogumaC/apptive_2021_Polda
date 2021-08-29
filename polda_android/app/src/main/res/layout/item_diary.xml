@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/diary_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/diary_cover"
+        android:scaleType="fitXY"
+        android:src="@drawable/diary_image_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,500:332"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,500:332"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/diary_design" />
+
+
+    <TextView
+        android:id="@+id/diaryTitle"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/diary_title"
+        android:backgroundTintMode="src_over"
+        android:clickable="true"
+        android:ems="10"
+        android:fontFamily="@font/diary_font1"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="@color/diary_title_color"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <ImageButton
+        android:id="@+id/diaryEditBtn"
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/diary_image_edit"
+        app:layout_constraintTop_toTopOf="@id/diaryTitle"
+        app:layout_constraintEnd_toEndOf="@id/diaryTitle"
+        app:layout_constraintBottom_toBottomOf="@id/diaryTitle"
+        android:layout_marginRight="25dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/sticker_tab_stroke" />
+            <corners
+                android:topRightRadius="15dp"
+                android:topLeftRadius="15dp"
+                />
+
+
+
+        </shape>
+    </item>
+
+</selector>

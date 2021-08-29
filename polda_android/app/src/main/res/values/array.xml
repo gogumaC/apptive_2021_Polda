@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><array name="guide">
+    <item>@drawable/sticker_sample_1</item>
+    <item>@drawable/sticker_sample_2</item>
+</array>
+</resources>

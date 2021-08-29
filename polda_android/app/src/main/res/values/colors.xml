@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fabColor">#FB8D8D</color>
+    <color name="background">#FFCACA</color>
+    <color name="searchBar">#FFCACA</color>
+    <color name="searchBar_solid">#FFEAEA</color>
+    <color name="home_fab_main">#FB8D8D</color>
+    <color name="home_fab_rest">#ffffff</color>
+    <color name="detail_background">#ffffff</color>
+
+    <color name="sticker_background">#ffffff</color>
+    <color name="sticker_tab_background">#ffffff</color>
+    <color name="sticker_tab_stroke">#FBDFDF </color>
+    <color name="sticker_tab_icon">#FFCACA</color>
+    <color name="font_color">#121212</color>
+    <color name="polaroid_title_color">#121212</color>
+    <color name="polaroid_memo_color">#121212</color>
+    <color name="diary_title_color">#948B8B</color>
+    <color name="alert">#121212</color>
+    <color name="home_background">#ffffff</color>
+</resources>

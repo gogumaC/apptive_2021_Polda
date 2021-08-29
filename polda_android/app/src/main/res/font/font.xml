@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font android:font="@font/binggrae_samanco"/>
+    <font android:font="@font/cafe24oneprettynight"/>
+    <font android:font="@font/goodtoday_medium"/>
+    <font android:font="@font/kyobo_handwriting"/>
+    <font android:font="@font/maruburi_regular"/>
+    <font android:font="@font/nanum_squarer"/>
+    <font android:font="@font/scdream6"/>
+    <font android:font="@font/uhbee_ann"/>
+    <font android:font="@font/diary_font1"/>
+    <font android:font="@font/diary_font"/>
+</font-family>

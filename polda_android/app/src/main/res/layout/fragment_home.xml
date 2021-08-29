@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:paddingEnd="10dp">
+
+    <data>
+
+        <variable
+            name="home"
+            type="com.apptive.android.polda.fragment.FragmentHome" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.FragmentHome">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_polda_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/searchBar"
+            app:layout_constraintBottom_toBottomOf="@+id/searchTextView"
+            app:layout_constraintEnd_toStartOf="@+id/view3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/searchTextView" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/searchbar_background_home"
+            android:backgroundTint="@color/searchBar"
+            app:layout_constraintBottom_toBottomOf="@+id/searchTextView"
+            app:layout_constraintEnd_toEndOf="@+id/searchTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/searchTextView"
+            app:layout_constraintTop_toTopOf="@+id/searchTextView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <AutoCompleteTextView
+            android:id="@+id/searchTextView"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/searchbar_background_home"
+            android:completionHint="해시태그를 입력하세요."
+            android:completionThreshold="1"
+            android:hint="#HashTag"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/fabColor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/modeSwitch"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/switch_off"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="@+id/infoBtn"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/infoBtn"
+            app:layout_constraintTop_toTopOf="@+id/infoBtn" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/homeList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingBtnMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="64dp"
+            android:backgroundTintMode="add"
+            android:clickable="true"
+            android:foregroundTintMode="multiply"
+            android:src="@drawable/ic_circle_plus_home"
+            app:backgroundTint="@color/home_fab_main"
+            app:backgroundTintMode="multiply"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@null" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingBtnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_thrash_icon_home"
+            android:visibility="gone"
+            app:backgroundTint="@color/home_fab_rest"
+            app:layout_constraintBottom_toTopOf="@id/floatingBtnMain"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@null" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingBtnSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_list_icon_home"
+            android:visibility="gone"
+            app:backgroundTint="@color/home_fab_rest"
+            app:layout_constraintBottom_toTopOf="@id/floatingBtnDelete"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@null" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingBtnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_add_home"
+            android:visibility="gone"
+            app:backgroundTint="@color/home_fab_rest"
+            app:layout_constraintBottom_toTopOf="@id/floatingBtnSort"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tint="@null" />
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchTextView" />
+
+        <ImageView
+            android:id="@+id/infoBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:tintMode="src_atop"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_dialog_info"
+            app:tint="@color/fabColor" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
