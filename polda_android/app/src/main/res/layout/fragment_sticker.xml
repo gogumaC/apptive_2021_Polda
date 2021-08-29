@@ -5,7 +5,7 @@
     <data>
         <variable
             name="stickerView"
-            type="com.apptive.android.polda.customView.StickerListView" />
+            type="com.apptive_saenggamja.android.polda.customView.StickerListView" />
     </data>
 
     <LinearLayout

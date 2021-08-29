@@ -6,7 +6,7 @@
     <data>
         <variable
             name="polaroid_bakc"
-            type="com.apptive.android.polda.customView.PolaroidBack" />
+            type="com.apptive_saenggamja.android.polda.customView.PolaroidBack" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -63,7 +63,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title" />
 
-            <com.apptive.android.polda.customView.FlowLayout
+            <com.apptive_saenggamja.android.polda.customView.FlowLayout
                 android:id="@+id/flowLayout"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -88,7 +88,7 @@
                     android:hint="#            "
                     android:inputType="textPersonName"
                     android:textColor="@color/polaroid_memo_color" />
-            </com.apptive.android.polda.customView.FlowLayout>
+            </com.apptive_saenggamja.android.polda.customView.FlowLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

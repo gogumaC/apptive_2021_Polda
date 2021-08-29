@@ -26,7 +26,7 @@
         app:layout_constraintHorizontal_bias="0.122"
         android:layout_margin="16dp" />
 
-    <com.apptive.android.polda.customView.PolaroidBack
+    <com.apptive_saenggamja.android.polda.customView.PolaroidBack
         android:id="@+id/polaroidBack"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

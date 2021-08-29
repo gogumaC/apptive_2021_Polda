@@ -9,11 +9,11 @@ android {
 
 
     defaultConfig {
-        applicationId "com.apptive.android.myapplication"
+        applicationId "com.apptive.android.polda"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.2"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

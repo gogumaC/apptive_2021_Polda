@@ -5,7 +5,7 @@
     <data>
         <variable
             name="model"
-            type="com.apptive.android.polda.viewModel.ViewModelEditTempState" />
+            type="com.apptive_saenggamja.android.polda.viewModel.ViewModelEditTempState" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -48,7 +48,7 @@
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toTopOf="@+id/editmemoB" />
 
-        <com.apptive.android.polda.customView.PolaroidBack
+        <com.apptive_saenggamja.android.polda.customView.PolaroidBack
             android:id="@+id/polaroidBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

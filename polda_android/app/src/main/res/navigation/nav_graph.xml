@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentHome"
-        android:name="com.apptive.android.polda.fragment.FragmentHome"
+        android:name="com.apptive_saenggamja.android.polda.fragment.FragmentHome"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,12 +16,12 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentSearch"
-        android:name="com.apptive.android.polda.fragment.FragmentSearch"
+        android:name="com.apptive_saenggamja.android.polda.fragment.FragmentSearch"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/fragmentDetail"
-        android:name="com.apptive.android.polda.fragment.FragmentDetail"
+        android:name="com.apptive_saenggamja.android.polda.fragment.FragmentDetail"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail"
         >
@@ -33,7 +33,7 @@
         app:startDestination="@id/fragmentEdit">
         <fragment
             android:id="@+id/fragmentEdit"
-            android:name="com.apptive.android.polda.fragment.FragmentEdit"
+            android:name="com.apptive_saenggamja.android.polda.fragment.FragmentEdit"
             android:label="fragment_edit"
             tools:layout="@layout/fragment_edit">
             <action
@@ -42,7 +42,7 @@
         </fragment>
         <fragment
             android:id="@+id/fragmentEditMemo2"
-            android:name="com.apptive.android.polda.fragment.FragmentEditMemo"
+            android:name="com.apptive_saenggamja.android.polda.fragment.FragmentEditMemo"
             android:label="FragmentEditMemo"
             tools:layout="@layout/fragment_edit_memo" >
             <action
@@ -71,7 +71,7 @@
         app:startDestination="@id/fragmentShowPolaloid">
         <fragment
             android:id="@+id/fragmentShowPolaloid"
-            android:name="com.apptive.android.polda.fragment.FragmentShowPolaloid"
+            android:name="com.apptive_saenggamja.android.polda.fragment.FragmentShowPolaloid"
             android:label="fragment_show_polaloid"
             tools:layout="@layout/fragment_show_polaloid">
             <action
@@ -86,7 +86,7 @@
         </fragment>
         <fragment
             android:id="@+id/fragmentShowPolaroid22"
-            android:name="com.apptive.android.polda.fragment.FragmentShowPolaroid2"
+            android:name="com.apptive_saenggamja.android.polda.fragment.FragmentShowPolaroid2"
             android:label="FragmentShowPolaroid2"
             tools:layout="@layout/fragment_show_polaroid2" >
             <action

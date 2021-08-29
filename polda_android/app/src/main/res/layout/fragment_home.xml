@@ -9,7 +9,7 @@
 
         <variable
             name="home"
-            type="com.apptive.android.polda.fragment.FragmentHome" />
+            type="com.apptive_saenggamja.android.polda.fragment.FragmentHome" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
